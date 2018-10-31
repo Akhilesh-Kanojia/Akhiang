@@ -1,0 +1,278 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+	font-family: 'FontAwesome';
+	src: url('fonts/fontawesome-webfont.eot?v=4.7.0');
+	src: url('fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+.fa {
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.fa-mobile-phone:before,
+.fa-mobile:before {
+  content: "\f10b";
+}
+.fa-html5:before {
+  content: "\f13b";
+}
+.fa-css3:before {
+  content: "\f13c";
+}
+.fa-star:before {
+  content: "\f005";
+}
+.fa-twitter:before {
+	content: "\f099";
+}
+.fa-flickr:before {
+	content: "\f16e";
+}
+.fa-github:before {
+	content: "\f09b";
+}
+html {
+	height: 100%;
+}
+body {
+	margin: 0px;
+	width: 100%;
+	min-height: 100%;
+	font-family: 'sourcesanspro';
+	font-size: 14px;
+	color: #666;
+}
+::-moz-selection {
+ color: #FFF;
+ background: #00AEEF;
+}
+::selection {
+	color: #FFF;
+	background: #00AEEF;
+}
+a {
+	color: #fff;
+	text-decoration: none;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+a img {
+	border: none;
+}
+ul, ol {
+	margin: 0;
+	padding: 0;
+}
+ul {
+	list-style: none;
+}
+h1, h2, h3, h4, h5, h6, p {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	font-weight: 400;
+}
+section, article, aside, header, hgroup, footer, nav, blockquote, address, time, figure, canvas, video {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav, menu, section, summary {
+	display: block;
+}
+p {
+	padding-bottom: 20px;
+}
+.clear {
+	clear: both;
+	float: none;
+}
+.wrapper{
+	width: 80%;
+	margin: 0 auto;
+}
+.container{
+	position: relative;
+}
+.container > .img_gallery{
+	width: 100%;
+	height: 500px;
+	overflow: hidden;
+} 
+.container > .img_gallery > img{
+	width: 100%;
+	display: block;
+}
+.container > header > .wrapper{
+	width: 80%;
+	margin: 0 auto;
+}
+.container > header{
+	width: 100%;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	background: #3b3a38;
+	color: #fff;
+}
+.container > header > .wrapper > .navigation{
+	display: table;
+	width: 100%;
+}
+.container > header > .wrapper > .navigation > .logo, .container > header > .wrapper > .navigation > nav{
+	display: table-cell;
+	vertical-align: middle;
+}
+.container > header > .wrapper > .navigation > nav{
+	text-align: right;
+}
+.container > header > .wrapper > .navigation > nav > ul > li{
+	display: inline;
+	position: relative;
+}
+.container > header > .wrapper > .navigation > nav > ul > li > a{
+	position: relative;
+	padding: 20px 20px;
+}
+.container > header > .wrapper > .navigation > nav > ul > li > a.active{
+	border-bottom: 4px solid #e56768;
+	color: #e56768;
+}
+.container > header > .wrapper > .navigation > nav > ul > li > a:before{
+	content: '';
+	background: #e56768;
+	position: absolute;
+	left: 0px;
+	bottom: 50%;
+	width: 100%;
+	height: 4px;
+	opacity: 0;
+	transition: all .3s linear;
+}
+.container > header > .wrapper > .navigation > nav > ul > li > a:hover:before{
+	opacity: 1;
+	bottom: -4px;
+}
+.container > .gallery_content{
+	position: absolute;
+	left: 0px;
+	top: 16%;
+	width: 100%;
+	margin-top: 30px;
+	box-sizing: border-box;
+}
+.container > .gallery_content > .wrapper > .img_description{
+	width: 30%;
+}
+.container > .gallery_content > .wrapper > .img_description > h3{
+	font-size: 24px;
+	color: #3b3a38;
+	margin-bottom: 30px;
+}
+.container > .gallery_content > .wrapper > .img_description > h3 span{
+	color: #e56768;
+}
+.container > .gallery_content > .wrapper > .img_description > p{
+	color: #3b3a38;
+	line-height: 20px;
+}
+.container > .gallery_content > .wrapper > .img_description > .btn{
+	width: 80px;
+	display: block;
+	padding: 8px 14px;
+	border: 2px solid #fdb02e;
+	box-shadow: inset 3px 0px 5px #fdb02e;
+	margin-top: 20px;
+	text-align: center;
+	float: left;
+}
+.container > .check_out_features{
+	background: #e56768;
+	height: 500px;
+}
+.container > .check_out_features > .wrapper > h2{
+	text-align: center;
+	font-size: 24px;
+	padding-top: 20px;
+	color: #fdb02e;
+}
+.container > .check_out_features > .wrapper > .features_logo{
+	margin-top: 20px;
+	width: 100%;
+	box-sizing: border-box;
+}
+.container > .check_out_features > .wrapper > .features_logo > ul > li{
+	float: left;
+	width: 22%;
+	margin-right: 3%;
+	padding: 2px;
+	box-sizing: border-box;
+}
+.container > .check_out_features > .wrapper > .features_logo > ul > li.last{
+	margin-right: 0px;
+}
+.container > .check_out_features > .wrapper > .features_logo > ul:after{
+	content: '';
+	clear: both;
+	float: none;
+}
+.container > .check_out_features > .wrapper > .features_logo > ul > li > .hover_circ > .circle span.icon_mid{
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	background: #dc5e5f;
+	font-size: 50px;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+}
+.border_active{
+	color: #ffc81b;
+	border: 1px solid #ffc81b;
+}
+.container > .check_out_features > .wrapper > .features_logo > ul > li > .hover_circ h3.heading_active{
+	color: #ffc81b;
+}
+.container > .check_out_features > .wrapper > .features_logo > ul > li > .hover_circ > .icon_mid:hover{
+	color: #ffc81b;
+	border: 1px solid #ffc81b;
+}
+.container > .check_out_features > .wrapper > .features_logo > ul > li > .hover_circ > .circle a{
+    display: block;
+	text-align: center;
+}
+.icon_mid:after, .icon_mid:before{
+	display: inline-block;
+	vertical-align: middle;
+}
+.icon_mid:after{
+	content: '';
+	width: 0px;
+	height:  100%;
+	vertical-align: middle;
+}
+.container > .check_out_features > .wrapper > .features_logo > ul > li > .hover_circ h3, .container > .check_out_features > .wrapper > .features_logo > ul > li > .conent p{
+	color: #fff;
+	text-align: center;
+}
+.container > .check_out_features > .wrapper > .features_logo > ul > li > .hover_circ h3{
+	margin-bottom: 20px;
+}
+.btn{
+	width: 80px;
+	display:block;
+	padding: 8px 14px;
+	border: 2px solid #fdb02e;
+	box-shadow: inset 3px 0px 2px #fdb02e;
+	margin-top: 20px;
+	text-align: center;
+	margin: 0 auto;
+}
